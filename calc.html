@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="calculator">
+        <div class="inputBox">
+          <input type="text" placeholder="0" id="input" />
+          <input type="text" id="input2" />
+        </div>
+        <div class="btnBox" id="btnBox">
+          <div class="box">
+            <button onclick="input.value=input.value.toString().slice(0,-1)">
+              DEL
+            </button>
+          </div>
+          <div class="box1">
+            <button onclick="input.value+=textContent">7</button>
+            <button onclick="input.value+=textContent">8</button>
+            <button onclick="input.value+=textContent">9</button>
+            <button onclick="input.value+=textContent">/</button>
+          </div>
+          <div class="box1">
+            <button onclick="input.value+=textContent">4</button>
+            <button onclick="input.value+=textContent">5</button>
+            <button onclick="input.value+=textContent">6</button>
+            <button onclick="input.value+=textContent">*</button>
+          </div>
+          <div class="box3">
+            <button onclick="input.value+=textContent">1</button>
+            <button onclick="input.value+=textContent">2</button>
+            <button onclick="input.value+=textContent">3</button>
+            <button onclick="input.value+=textContent">+</button>
+          </div>
+          <div class="box4">
+            <button onclick="input.value+=textContent">.</button>
+            <button onclick="input.value+=textContent">0</button>
+            <button onclick="input.value=''" id="ac">AC</button>
+            <button id="equal">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
